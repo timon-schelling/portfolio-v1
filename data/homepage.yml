@@ -5,36 +5,52 @@ banner:
 # about
 about:
   enable : true
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  content : "Hello, I’m Timon Schelling as far as I can tell from planet Earth dimension C-137. My heart started beating more than 18 earth years ago. You could call me really obsessed with science, math and technology. When I’m once again out of portal gun charge I consider problem solving a skill that is worth practicing. Once I found my problem or project I’m really into it like a Mr. Me6 but hopefully without the dying after success. I truly believe in opensource. No intergalactic government should be allowed to keep knowledge as their property. This website is all about me, my projects and hopefully one day my research."
+  detailed: "Hello, I’m Timon Schelling a 18 year old opensource developer from Germany. You could call me really obsessed with science, math and technology. In my free time I like to practice my problem solving skills. I started coding at the age of 12 after getting a book about coding from a relative. Since than I spend thousands of hours coding. Starting with lots of opensource projects. In the year 2017 I got my first developer job at [Content Up](http://contentup.de). But never stopped believing in opensource. This website is all about me, my projects and hopefully one day my research."
   button:
     enable : true
-    label : "know more"
-    URL : "about"
+    label : "What are you talking about?"
 
 # skill
 skill:
   enable : true
   title : "Skills"
   item:
-    - title : "Web Design"
-      progress : "90%"
-      color : "#fdb157"
-      
-    - title : "Logo Design"
-      progress : "60%"
-      color : "#9473e6"
-      
-    - title : "After Effects"
+    - title : "Kotlin"
+      progress : "98%"
+      color : "#FF6C00"
+
+    - title : "Java"
       progress : "80%"
-      color : "#bdecf6"
-      
+      color : "#FF1300"
+
+    - title : "Rest Api"
+      progress : "75%"
+      color : "#00FF6E"
+
     - title : "Web App"
       progress : "70%"
-      color : "#ffbcaa"
+      color : "#FF006C"
+
+    - title : "Docker"
+      progress : "60%"
+      color : "#00B4FF"
+
+    - title : "Go"
+      progress : "60%"
+      color : "#00CBFF"
+
+    - title : "JavaScript"
+      progress : "50%"
+      color : "#FFD000"
+
+    - title : "Python"
+      progress : "45%"
+      color : "#FFEF00"
 
 # experience
 experience:
-  enable : true
+  enable : false
   title : "Experience"
   item: 
     - logo : "images/experience/icon-1.png"
@@ -54,7 +70,7 @@ experience:
 
 # education
 education:
-  enable : true
+  enable : false
   title : "Education"
   item:
     - title : "Marters in UX Design"
@@ -75,7 +91,7 @@ education:
 
 # service
 service:
-  enable : true
+  enable : false
   title : "Services"
   item:
     - title : "UI Design"
@@ -97,12 +113,12 @@ service:
 portfolio:
   enable : true
   title : "Portfolio"
-  item_show : 5
+  item_show : 8
   # portfolio item comes from 'data/portfolio.yml' item.
 
 # testimonial
 testimonial:
-  enable : true
+  enable : false
   title : "Testimonials"
   item:
     - name : "Jesica Gomez"
@@ -122,7 +138,7 @@ testimonial:
 
 # client logo slider
 clients_logo_slider:
-  enable : true
+  enable : false
   item:
     - logo : "images/clients-logo/client-logo-1.png"
       URL : "http://examplesite.com"

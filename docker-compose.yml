@@ -1,8 +1,7 @@
 server:
     image: klakegg/hugo:0.74.3
-    command: server --themesDir /themes
+    command: server
     volumes:
-      - "./site:/src"
-      - "./theme:/themes/theme"
+      - ".:/src"
     ports:
       - "1313:1313"

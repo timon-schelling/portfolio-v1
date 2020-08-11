@@ -11,21 +11,23 @@
       </div>
       <div class="col-lg-7 mb-5 mb-lg-0 align-self-center">
         <div class="row mx-0">
+          {{ with .Params.Time}}
           <div class="col-sm-6 mb-5">
             <div class="project-meta">
-              <i class="ti-calendar"></i>
+              <i class="ti-time"></i>
               <div class="ml-3">
-                <h4>Date</h4>
-                <p>{{ .PublishDate.Format "Jan 02, 2006" }}</p>
+                <h4>Time</h4>
+                <p>{{. | markdownify}}</p>
               </div>
             </div>
           </div>
-          {{ with .Params.Client}}
+          {{ end }}
+          {{ with .Params.Lines}}
           <div class="col-sm-6 mb-5">
             <div class="project-meta">
-              <i class="ti-user"></i>
+              <i class="ti-align-left"></i>
               <div class="ml-3">
-                <h4>Client</h4>
+                <h4>Lines of code</h4>
                 <p>{{. | markdownify}}</p>
               </div>
             </div>

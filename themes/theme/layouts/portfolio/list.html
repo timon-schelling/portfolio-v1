@@ -28,8 +28,27 @@
     <div class="row shuffle-wrapper">
       {{ range .Data.Pages }}
       <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{{range $index, $element:= .Params.categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+        <div class="card hover-wrapper bg-light">
+          <img class="card-img-top" src="{{.Params.image | absURL }}" alt="portfolio-image"></img>
+          <div class="card-body">
+            {{ with .Params.Title}}
+            <h5 class="card-title">{{. | markdownify}}</h5>
+            {{ end }}
+            {{ with .Params.Description}}
+            <p>{{. | markdownify}}</p>
+            {{ end }}
+            <p class="mb-0">
+              {{ with .Params.Time}}
+              <i class="ti-time text-dark"></i>
+              {{. | markdownify}}
+              {{ end }}
+              &nbsp;
+              {{ with .Params.Lines}}
+              <i class="ti-align-left text-dark"></i>
+              {{. | markdownify}}
+              {{ end }}
+            </p>
+          </div>
           <div class="hover-overlay">
             <div class="hover-content">
               <a class="btn btn-light btn-sm" href="{{ .Permalink }}">view project</a>
@@ -42,11 +61,4 @@
   </div>
 </section>
 <!-- /portfolio -->
-
-<section class="section bg-light">
-  <div class="container">
-    {{ partial "client-slider.html" . }}
-  </div>
-</section>
-
 {{ end }}

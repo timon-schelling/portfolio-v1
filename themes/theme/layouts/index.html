@@ -12,30 +12,6 @@
     <div class="layer-bg w-100">
       <img class="img-fluid w-100" src="{{`images/illustrations/leaf-bg.png` | relURL}}" alt="bg-shape">
     </div>
-    <div class="layer" id="l2">
-      <img src="{{`images/illustrations/dots-cyan.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l3">
-      <img src="{{`images/illustrations/leaf-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l4">
-      <img src="{{`images/illustrations/dots-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l5">
-      <img src="{{`images/illustrations/leaf-yellow.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l6">
-      <img src="{{`images/illustrations/leaf-cyan.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l7">
-      <img src="{{`images/illustrations/dots-group-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l8">
-      <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l9">
-      <img src="{{`images/illustrations/leaf-cyan-2.svg` | relURL}}" alt="bg-shape">
-    </div>
     <!-- social icon -->
     <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
       {{ range site.Params.social }}
@@ -53,10 +29,11 @@
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
           {{ with site.Data.homepage.about }}
-          <p class="font-secondary lead text-dark">{{.content | markdownify}}</p>
+          <p class="lead text-dark">{{.content | markdownify}}</p>
+          <p class="lead text-dark collapse" id="detailed-text">{{.detailed | markdownify}}</p>
           {{ if .button.enable }}
           {{ with .button }}
-          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+          <a href="{{ .URL | absURL }}" class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#detailed-text" aria-expanded="false" aria-controls="detailed-text">{{.label}}</a>
           {{ end }}
           {{ end }}
           {{ end }}
@@ -185,23 +162,36 @@
   <!-- portfolio -->
   <section class="section">
     <div class="container">
-      <div class="row">
+      <div class="row ">
         <div class="col-12 text-center">
           <h2 class="section-title">{{ site.Data.homepage.portfolio.title | markdownify }}</h2>
         </div>
       </div>
-      <div class="row shuffle-wrapper">
+      <div class="row">
         {{ $item:= site.Data.homepage.portfolio.item_show }}
         {{ range first $item (where .Site.RegularPages "Section" "portfolio") }}
-        <div class="col-lg-4 col-6 mb-4 shuffle-item">
-          <div class="position-relative rounded hover-wrapper">
-            <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-            <div class="hover-overlay">
-              <div class="hover-content">
-                <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">view project</a>
-              </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <article class="card shadow">
+            <img class="rounded card-img-top" src="{{.Params.image | absURL }}" alt="portfolio-image">
+            <div class="card-body">
+              <h4 class="card-title"><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
+              </h4>
+              {{ with .Params.Description}}
+              <p>{{. | markdownify}}</p>
+              {{ end }}
+              <p class="mb-0">
+                {{ with .Params.Time}}
+                <i class="ti-time text-dark"></i>
+                {{. | markdownify}}
+                {{ end }}
+                &nbsp;
+                {{ with .Params.Lines}}
+                <i class="ti-align-left text-dark"></i>
+                {{. | markdownify}}
+                {{ end }}
+              </p>
             </div>
-          </div>
+          </article>
         </div>
         {{ end }}
       </div>
@@ -234,13 +224,6 @@
         </div>
       </div>
     </div>
-    <!-- bg shapes -->
-    <img src="{{`images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map">
-    <img src="{{`images/illustrations/dots-group-v.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-1">
-    <img src="{{`images/illustrations/leaf-orange.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-2">
-    <img src="{{`images/illustrations/dots-group-sm.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-3">
-    <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-4">
-    <img src="{{`images/illustrations/leaf-cyan.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-5">
   </section>
   <!-- /testimonial -->
   {{ end }}
