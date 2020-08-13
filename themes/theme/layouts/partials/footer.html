@@ -65,7 +65,7 @@
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}"></script>
+<script src="{{ .link | relURL }}"></script>
 {{ end }}
 
 {{ "<!-- Main Script -->" | safeHTML }}
