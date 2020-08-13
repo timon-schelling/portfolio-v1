@@ -70,4 +70,4 @@
 
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
-<script src="{{ $script.relUrl }}"></script>
+<script src="{{ $script.RelPermalink }}"></script>
