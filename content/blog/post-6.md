@@ -1,8 +1,8 @@
 ---
-title: "Amazon increase income 1.5 Million"
+title: "I’d like to start a blog, but..."
 date: 2019-05-12T12:14:34+06:00
 image: "images/blog/post-3.jpg"
-description: "This is meta description."
+description: ""
 draft: false
 ---
 
