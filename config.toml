@@ -31,12 +31,12 @@ link = "plugins/google-map/map.js"
 [[menu.main]]
 URL = "blog"
 name = "Blog"
-weight = 2
+weight = 1
 
 [[menu.main]]
 URL = "portfolio"
 name = "Portfolio"
-weight = 3
+weight = 2
 
 
 # default parameters
