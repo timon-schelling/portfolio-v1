@@ -33,7 +33,7 @@
           <p class="lead text-dark collapse" id="detailed-text">{{.detailed | markdownify}}</p>
           {{ if .button.enable }}
           {{ with .button }}
-          <a href="{{ .URL | absURL }}" class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#detailed-text" aria-expanded="false" aria-controls="detailed-text">{{.label}}</a>
+          <a class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#detailed-text" aria-expanded="false" aria-controls="detailed-text">{{.label}}</a>
           {{ end }}
           {{ end }}
           {{ end }}
@@ -166,7 +166,7 @@
         <div class="col-12 text-center">
           <h2 class="section-title">
             {{ with .Site.GetPage "/portfolio"}}
-            <a class="text-dark" href="{{ .URL | absURL }}">
+            <a class="text-dark" href="{{ .URL | relURL }}">
             {{ end }}
               {{site.Data.homepage.portfolio.title | markdownify }}
             </a>
@@ -177,7 +177,7 @@
         {{ range first site.Data.homepage.portfolio.item_show (sort (where .Site.RegularPages "Section" "portfolio") ".Params.Importance") }}
         <div class="col-lg-4 col-sm-6 mb-4">
           <article class="card shadow">
-            <img class="rounded card-img-top" src="{{.Params.image | absURL }}" alt="portfolio-image">
+            <img class="rounded card-img-top" src="{{.Params.image | relURL }}" alt="portfolio-image">
             <div class="card-body">
               <h4 class="card-title"><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
               </h4>
@@ -221,7 +221,7 @@
           <div class="text-center testimonial-content">
             <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
             <p class="text-white mb-4">{{.content | markdownify}}</p>
-            <img class="img-fluid rounded-circle mb-4 d-inline-block" src="{{.image | absURL }}" alt="client-image">
+            <img class="img-fluid rounded-circle mb-4 d-inline-block" src="{{.image | relURL }}" alt="client-image">
             <h4 class="text-white">{{.name }}</h4>
             <h6 class="text-light mb-4">{{ .designation }}</h6>
           </div>
@@ -253,7 +253,7 @@
         <div class="col-12 text-center">
           <h2 class="section-title">
             {{ with .Site.GetPage "/blog"}}
-            <a class="text-dark" href="{{ .URL | absURL }}">
+            <a class="text-dark" href="{{ .URL | relURL }}">
             {{ end }}
               {{site.Data.homepage.blog.title | markdownify }}
             </a>

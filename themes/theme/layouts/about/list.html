@@ -21,10 +21,10 @@
       </div>
       <div class="col-md-4 text-center drag-lg-top">
         <div class="shadow-down mb-4">
-          <img src="{{.Params.author_image | absURL }}" alt="author"
+          <img src="{{.Params.author_image | relURL }}" alt="author"
             class="img-fluid w-100 rounded-lg border-thick border-white">
         </div>
-        <img src="{{.Params.author_signature | absURL }}" alt="signature" class="img-fluid">
+        <img src="{{.Params.author_signature | relURL }}" alt="signature" class="img-fluid">
         <h4>{{ site.Params.Author }}</h4>
       </div>
     </div>
@@ -43,7 +43,7 @@
       </div>
       {{ range .item }}
       <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-        <img src="{{ .icon | absURL }}" class="mb-4" alt="icon">
+        <img src="{{ .icon | relURL }}" class="mb-4" alt="icon">
         <h4 class="mb-4">{{ .title }}</h4>
         <p>{{ .content | markdownify }}</p>
       </div>
@@ -67,7 +67,7 @@
       {{ range .team_member }}
       <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
         <div class="card text-center">
-          <img src="{{ .image | absURL }}" class="card-img-top">
+          <img src="{{ .image | relURL }}" class="card-img-top">
           <div class="card-body">
             <h4 class="card-title">{{.title }}</h4>
             <p class="text-light font-secondary">{{.designation }}</p>
