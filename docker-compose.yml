@@ -1,6 +1,6 @@
 server:
     image: klakegg/hugo:0.74.3
-    command: server -b="https://timokrates.de:443" --liveReloadPort=443
+    command: server -b="https://timokrates.de:443" --disableLiveReload 
     volumes:
       - ".:/src"
     ports:
