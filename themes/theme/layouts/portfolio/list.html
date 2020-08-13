@@ -7,29 +7,7 @@
   <div class="container">
     <div class="row">
       {{ range sort .Data.Pages ".Params.Importance" }}
-      <div class="col-lg-4 col-sm-6 mb-4" >
-        <article class="card shadow">
-          <img class="rounded card-img-top" src="{{.Params.image | relURL }}" alt="portfolio-image">
-          <div class="card-body">
-            <h4 class="card-title"><a class="text-dark" href="{{.RelPermalink}}">{{.Title }}</a>
-            </h4>
-            {{ with .Params.Description}}
-            <p>{{. | markdownify}}</p>
-            {{ end }}
-            <p class="mb-0">
-              {{ with .Params.Time}}
-              <i class="ti-time text-dark"></i>
-              {{. | markdownify}}
-              {{ end }}
-              &nbsp;
-              {{ with .Params.Lines}}
-              <i class="ti-align-left text-dark"></i>
-              {{. | markdownify}}
-              {{ end }}
-            </p>
-          </div>
-        </article>
-      </div>
+      {{ .Render "project" }}
       {{ end }}
     </div>
   </div>
