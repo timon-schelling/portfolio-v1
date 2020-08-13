@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "http://home.timokrates.de"
+baseURL = "http://timokrates.de"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "theme"

@@ -1,6 +1,6 @@
 server:
     image: klakegg/hugo:0.74.3
-    command: server
+    command: server -b "https://timokrates.de"
     volumes:
       - ".:/src"
     ports:
