@@ -3,7 +3,7 @@ title: "Montreee"
 importance: 1
 description: "A CMS written in kotlin"
 time: "+600h"
-lines: "+45k"
+lines: "+120k"
 image: "images/portfolio/montreee.png"
 project_url : "https://github.com/montreee"
 categories: ["development", "architecture"]
