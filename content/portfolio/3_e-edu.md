@@ -11,5 +11,5 @@ draft: false
 ---
 
 #### E-edu
-In 48 hours 1,500 solutions were developed during the #WirVsVirus Hackathon. Our team worked on an e-learning platform.
 
+In 48 hours 1,500 solutions were developed during the #WirVsVirus Hackathon. Our team worked on an e-learning platform.

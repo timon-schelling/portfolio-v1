@@ -11,4 +11,5 @@ draft: false
 ---
 
 #### Authly
+
 Open Source Single Sign-On Service with an open Developer API

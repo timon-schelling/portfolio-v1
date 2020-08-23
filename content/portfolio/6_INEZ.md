@@ -12,10 +12,12 @@ draft: false
 
 ## INEZ / Timon Schelling
 
-### About 
+### About
+
 This Project Is my participation in the INEZ-challenge by it-talents.de(https://www.it-talents.de/foerderung/code-competition/edeka-digital-code-competition-08-2019)
 
 ### Features
+
 - Written in kotlin
 - Easy to use shopping list
 - Auto save
@@ -30,16 +32,20 @@ This Project Is my participation in the INEZ-challenge by it-talents.de(https://
 
 ### Requirements
 
-#### Run 
+#### Run
+
 Installed JRE(1.8 tested on every System) with javafx (https://www.java.com/de/download/)
 
 #### Build
+
 Installed JDK(1.8 tested on every System) with javafx (https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 ### Installation
+
 Download the dist.zib from the current release and extract it on your machine
 
 ### Usage
+
 Run the `launch` file depending on your System
 
 Windows:
@@ -58,6 +64,7 @@ or run it directly with Java:
 ### Code example's
 
 #### klang tool
+
 ```kotlin
 import klang.check
 import klang.impl.JLanguageToolRule
@@ -84,7 +91,7 @@ fun main() {
 
 }
 ```
-output: 
+output:
 
     0: ben --> Ben
     1: ben --> den
@@ -100,7 +107,8 @@ output:
     11: ben --> säen  
     ...    
 
-### Build 
+### Build
+
 The project is built with Gradle. Run Gradle to build the project and to run the tests 
 using the following command on Linux/MacOS:
 
@@ -116,6 +124,7 @@ and (as common for gradle) `build` all other build files.
 ### Settings
 
 #### settings.json
+
 The `settings.json` can be found in the `static` folder. It is used to configure products and units that the app should know about.
 
 The main json object should contain too elements:
@@ -171,14 +180,17 @@ To example:
     ]
 }
 ````
+
 ### Content
 
-#### Modules 
-- Core: UI and INEZ specific code 
-- Util: not INEZ specific code 
+#### Modules
+
+- Core: UI and INEZ specific code
+- Util: not INEZ specific code
 - Test: Unit tests
 
 #### Packages
+
 - amber: parts of my currently not published kotlin utility library Amber  
 - klang: tool to suggest text changes in user input (based on rules, also used for autocompletion)
 - org.slf4j.impl: contains a dummy StaticLoggerBinder(used to disable slf4j logging) 

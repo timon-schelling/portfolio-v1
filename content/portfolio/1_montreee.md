@@ -10,7 +10,8 @@ categories: ["development", "architecture"]
 draft: false
 ---
 
-### Montreee 
+### Montreee
+
 Montreee is a CMS written in Kotlin.
 Development started in 2017.
 Easy to extend.
