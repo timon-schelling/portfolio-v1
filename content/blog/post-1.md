@@ -6,7 +6,7 @@ description: ""
 draft: false
 ---
 
-##### Here is my fist blog post. Yea I know German sucks... but as Jesus once sayd: "if you finaly get a blog post you sould apichiate it" or something like that i am not good at latin
+##### Here is my fist blog post. Yea I know German sucks... but as Jesus once said: "if you finally get a blog post you should apichiate it" or something like that i am not good at latin
 
 The following is an application for a software developer job that I would like to get as an employer. My humor is a mess I know...
 
