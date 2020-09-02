@@ -6,7 +6,7 @@
 <section class="section">
   <div class="container">
     <div class="row">
-      {{ range sort .Data.Pages ".Params.Importance" }}
+      {{ range .Data.Pages }}
       {{ .Render "project" }}
       {{ end }}
     </div>

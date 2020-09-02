@@ -174,7 +174,7 @@
         </div>
       </div>
       <div class="row">
-        {{ range first site.Data.homepage.portfolio.item_show (sort (where .Site.RegularPages "Section" "portfolio") ".Params.Importance") }}
+        {{ range first site.Data.homepage.portfolio.item_show .Site.RegularPages }}
         {{ .Render "project" }}
         {{ end }}
       </div>

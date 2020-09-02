@@ -1,6 +1,6 @@
 ---
 title: "Kcipt"
-importance: 5
+weight: 5
 description: "A scripting engine based on the kotlin language"
 time: "+300h"
 lines: "+12k"

@@ -1,6 +1,6 @@
 ---
 title: "Montreee"
-importance: 1
+weight: 2
 description: "A CMS written in kotlin"
 time: "+600h"
 lines: "+120k"

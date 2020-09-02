@@ -1,6 +1,6 @@
 ---
 title: "EC protocol"
-importance: 4
+weight: 4
 description: "Encrypted comunication protocol. Developed for a CTF."
 time: "+60h"
 lines: "+3k"

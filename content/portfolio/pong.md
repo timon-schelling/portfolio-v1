@@ -1,6 +1,6 @@
 ---
 title: "Pong"
-importance: 0
+weight: 1
 description: "Multiplatform multiplayer version of the famous pong game written in pure Kotlin"
 time: "+17h"
 lines: "+13k"
