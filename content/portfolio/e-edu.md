@@ -1,6 +1,6 @@
 ---
 title: "E-Edu"
-weight: 3
+weight: 4
 description: "In 48 hours 1,500 solutions were developed during the #WirVsVirus Hackathon. Our team worked on an e-learning platform."
 time: "+48h"
 lines: "+13k"

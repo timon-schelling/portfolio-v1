@@ -1,6 +1,6 @@
 ---
 title: "INEZ"
-weight: 6
+weight: 5
 description: "This Project Is my participation in the [INEZ-challenge](https://www.it-talents.de/foerderung/code-competition/edeka-digital-code-competition-08-2019) by it-talents.de"
 time: "+15h"
 lines: "+4k"

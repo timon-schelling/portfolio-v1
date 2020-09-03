@@ -1,6 +1,6 @@
 ---
 title: "Soul"
-weight: 9
+weight: 6
 description: "small overhead universal language (definition of an platform language usable for vm platforms and possessor architectures)"
 time: "+19h"
 lines: "none"

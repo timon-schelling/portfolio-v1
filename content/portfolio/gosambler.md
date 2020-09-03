@@ -1,6 +1,6 @@
 ---
 title: "Gosambler"
-weight: 8
+weight: 5
 description: "a assembler simulator written in go"
 time: "+6h"
 lines: "+9k"
