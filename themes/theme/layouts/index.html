@@ -174,7 +174,7 @@
         </div>
       </div>
       <div class="row">
-        {{ range first site.Data.homepage.portfolio.item_show .Site.RegularPages }}
+        {{ range first site.Data.homepage.portfolio.item_show (.Site.GetPage "/blog").Data.Pages }}
         {{ .Render "project" }}
         {{ end }}
       </div>
@@ -237,7 +237,7 @@
             </a>
           </h2>
         </div>
-        {{ range first 3 site.RegularPages }}
+        {{ range first 3 (.Site.GetPage "/blog").Data.Pages }}
         {{ .Render "post" }}
         {{ end }}
       </div>
