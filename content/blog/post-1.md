@@ -1,6 +1,6 @@
 ---
 title: "First blog... Finaly"
-date: 2020-08-21T00:00:00+01:00
+weight: 1
 image: "images/blog/post-5.jpg"
 description: ""
 draft: false
