@@ -4,6 +4,7 @@ weight: 4
 image: "images/blog/post-5.jpg"
 description: ""
 draft: false
+date: 2020-08-21T00:00:00+01:00
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore

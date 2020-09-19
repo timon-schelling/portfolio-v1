@@ -4,6 +4,7 @@ weight: 1
 image: "images/blog/post-5.jpg"
 description: ""
 draft: false
+date: 2020-08-21T00:00:00+01:00
 ---
 
 ##### Here is my fist blog post. Yea I know German sucks... but as Jesus once said: "if you finally get a blog post you should apichiate it" or something like that i am not good at latin
