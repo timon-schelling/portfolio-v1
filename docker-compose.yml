@@ -1,5 +1,6 @@
-server:
-    image: klakegg/hugo:0.74.3
+services:  
+  server:
+    image: klakegg/hugo
     command: server -b="https://timokrates.de:443"
     volumes:
       - ".:/src"
